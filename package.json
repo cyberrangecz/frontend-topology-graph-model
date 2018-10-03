@@ -9,7 +9,7 @@
     "lint": "ng lint",
     "e2e": "ng e2e",
     "build-library": "ng build --prod graph-topology-model-lib",
-    "pack": "cd dist/graph-topology-model && npm pack",
+    "pack": "cd dist/graph-topology-model-lib && npm pack",
     "generate-package": "npm install && npm run build-library && npm run pack"
   },
   "private": true,
