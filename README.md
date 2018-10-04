@@ -4,10 +4,10 @@ Graph Topology Model is a library containing model of Graph Topology.
 
 Library contains model for 
 
-** Node
-** Node Interface
-** Link
-** Enums
+* Node
+* Node Interface
+* Link
+* Enums
 
 It extends Node and Link D3.js model and therefore it can be used in apps using D3.js library.
 
