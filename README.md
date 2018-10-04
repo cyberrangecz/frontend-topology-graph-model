@@ -20,7 +20,7 @@ D3.js v5 or higher
 ## Usage
 To use the model in your project follow these steps:
 1. Run `npm install git+ssh://git@gitlab.ics.muni.cz:kypo2/frontend-new/kypo2-angular-topology-model.git#package`
-2. Import model classes like usual, for example `import { Node } from 'graph-topology-model-lib'
+2. Import model classes like usual, for example `import { Node } from 'graph-topology-model-lib`
 
 ## Developers
 
