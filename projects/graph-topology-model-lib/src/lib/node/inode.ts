@@ -12,5 +12,5 @@ export interface INode extends SimulationNodeDatum {
 
   physicalRole: NodePhysicalRoleEnum;
   name: string;
-  nodeInterfaces: NodePort[];
+  nodePorts: NodePort[];
 }

@@ -14,7 +14,7 @@ export abstract class Node implements INode {
 
   physicalRole: NodePhysicalRoleEnum;
   name: string;
-  nodeInterfaces: NodePort[];
+  nodePorts: NodePort[];
 
   protected constructor() {
   }
@@ -23,9 +23,9 @@ export abstract class Node implements INode {
     let result = 'Name: ' + this.name + '\n';
     result += 'Physical role: ' + this.physicalRole + '\n';
     let counter = 1;
-    this.nodeInterfaces.forEach(iface => {
-      result += '\nInterface ' + counter + '\n';
-      result += iface;
+    this.nodePorts.forEach(ports => {
+      result += '\nPort ' + counter + '\n';
+      result += ports;
       counter++;
     });
     return result;
