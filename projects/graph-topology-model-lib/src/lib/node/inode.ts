@@ -1,5 +1,5 @@
 import {NodePhysicalRoleEnum} from '../enums/node-physical-role-enum';
-import {NodeInterface} from '../node-interface/node-interface';
+import {NodePort} from '../node-port/node-port';
 import {SimulationNodeDatum} from 'd3';
 
 export interface INode extends SimulationNodeDatum {
@@ -12,5 +12,5 @@ export interface INode extends SimulationNodeDatum {
 
   physicalRole: NodePhysicalRoleEnum;
   name: string;
-  nodeInterfaces: NodeInterface[];
+  nodeInterfaces: NodePort[];
 }

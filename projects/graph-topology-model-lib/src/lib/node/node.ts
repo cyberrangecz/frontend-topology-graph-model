@@ -1,7 +1,6 @@
 import { NodePhysicalRoleEnum } from '../enums/node-physical-role-enum';
 import {INode} from './inode';
-import {NodeInterface} from '../node-interface/node-interface';
-import {forEach} from 'typescript-collections/dist/lib/arrays';
+import {NodePort} from '../node-port/node-port';
 /**
  * Abstract node used in graph-visual. Has attributes used for D3 simulation and SVG drawing (x,y, etc.)
  */
@@ -15,7 +14,7 @@ export abstract class Node implements INode {
 
   physicalRole: NodePhysicalRoleEnum;
   name: string;
-  nodeInterfaces: NodeInterface[];
+  nodeInterfaces: NodePort[];
 
   protected constructor() {
   }

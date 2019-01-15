@@ -9,6 +9,7 @@ import {INode} from './inode';
 
 export class SwitchNode extends Node {
 
+  cidr: string;
   children: INode[];
 
   constructor() {
