@@ -6,10 +6,10 @@ import {SimulationLinkDatum} from 'd3';
 export class Link implements SimulationLinkDatum<Node> {
 
   id: number;
-  node_a: Node;
-  node_b: Node;
-  port_a: NodePort;
-  port_b: NodePort;
+  source: Node;
+  target: Node;
+  portA: NodePort;
+  portB: NodePort;
   type: LinkTypeEnum;
 
 
