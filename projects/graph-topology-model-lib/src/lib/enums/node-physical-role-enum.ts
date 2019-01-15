@@ -3,6 +3,7 @@
  */
 export enum NodePhysicalRoleEnum {
   Router = 'router',
+  Switch = 'switch',
   Server = 'server',
   Cloud = 'cloud',
   Desktop = 'desktop',

@@ -10,7 +10,6 @@ export interface INode extends SimulationNodeDatum {
   fx?: number | null;
   fy?: number | null;
 
-  id: number;
   physicalRole: NodePhysicalRoleEnum;
   name: string;
   nodeInterfaces: NodeInterface[];

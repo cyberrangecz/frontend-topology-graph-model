@@ -13,20 +13,16 @@ export abstract class Node implements INode {
   fx?: number | null;
   fy?: number | null;
 
-  id: number;
   physicalRole: NodePhysicalRoleEnum;
   name: string;
   nodeInterfaces: NodeInterface[];
 
-  constructor(id: number, physicalRole: NodePhysicalRoleEnum, name: string) {
-    this.id = id;
-    this.physicalRole = physicalRole;
-    this.name = name;
+  protected constructor() {
   }
 
   public toString = (): string => {
     let result = 'Name: ' + this.name + '\n';
-    result += 'Physical role: ' + this.physicalRole + '\n' + 'Id: ' + this.id + '\n';
+    result += 'Physical role: ' + this.physicalRole + '\n';
     let counter = 1;
     this.nodeInterfaces.forEach(iface => {
       result += '\nInterface ' + counter + '\n';
