@@ -7,7 +7,7 @@
 	"type": "git",
 	"url": "https://gitlab.ics.muni.cz/kypo2/frontend-new/kypo2-angular-topology-model"
   },
-  "homepage": "https://gitlab.ics.muni.cz/kypo2/frontend-new/kypo2-angular-topology-model"
+  "homepage": "https://gitlab.ics.muni.cz/kypo2/frontend-new/kypo2-angular-topology-model",
   "scripts": {
     "ng": "ng",
     "start": "ng serve",
