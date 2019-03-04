@@ -1,11 +1,11 @@
 {
   "name": "topology-model",
   "version": "1.0.0",
-  "author":"Martin Hamerník <445720@mail.muni.cz>",
+  "author": "Martin Hamerník <445720@mail.muni.cz>",
   "description": "Common model of graph topology in its latest form (from Python API)",
   "repository": {
-	"type": "git",
-	"url": "https://gitlab.ics.muni.cz/kypo2/frontend-new/kypo2-angular-topology-model"
+    "type": "git",
+    "url": "https://gitlab.ics.muni.cz/kypo2/frontend-new/kypo2-angular-topology-model"
   },
   "homepage": "https://gitlab.ics.muni.cz/kypo2/frontend-new/kypo2-angular-topology-model",
   "scripts": {
@@ -19,7 +19,7 @@
     "pack": "cd dist/graph-topology-model-lib && npm pack",
     "generate-package": "npm install && npm run build-library && npm run pack"
   },
-  "private": true,
+  "private": false,
   "dependencies": {
     "@angular/common": "^7.0.0",
     "@angular/core": "^7.0.0",
