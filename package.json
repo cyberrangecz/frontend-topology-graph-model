@@ -17,7 +17,8 @@
     "e2e": "ng e2e",
     "build-library": "ng build --prod graph-topology-model-lib",
     "pack": "cd dist/graph-topology-model-lib && npm pack",
-    "generate-package": "npm install && npm run build-library && npm run pack"
+    "generate-package": "npm install && npm run build-library && npm run pack",
+    "publish": "npm run generate-package && cd dist/graph-topology-model-lib &&  npm publish --registry=http://kypo-storage.ics.muni.cz:8081/repository/npm-hosted"
   },
   "private": false,
   "dependencies": {

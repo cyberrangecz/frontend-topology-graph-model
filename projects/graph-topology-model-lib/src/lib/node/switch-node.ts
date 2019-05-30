@@ -29,4 +29,8 @@ export class SwitchNode extends Node {
       this.physicalRole = NodePhysicalRoleEnum.Switch;
     }
   }
+
+  public hasChilden(): boolean {
+    return this.children && this.children.length > 0;
+  }
 }
