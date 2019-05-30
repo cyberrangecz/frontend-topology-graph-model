@@ -6,6 +6,7 @@
 import { Node } from './node';
 import { NodePhysicalRoleEnum } from '../enums/node-physical-role-enum';
 import {INode} from './inode';
+import {HostNode} from './host-node';
 
 export class SwitchNode extends Node {
 
@@ -30,7 +31,7 @@ export class SwitchNode extends Node {
     }
   }
 
-  public hasChildren(): boolean {
-    return this.children && this.children.length > 0;
+  public hasExpandableSubnetwork(): boolean {
+    return this.children && this.children.length > 0 && this.children.some(child => child instanceof HostNode);
   }
 }
