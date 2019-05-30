@@ -30,7 +30,7 @@ export class SwitchNode extends Node {
     }
   }
 
-  public hasChilden(): boolean {
+  public hasChildren(): boolean {
     return this.children && this.children.length > 0;
   }
 }
