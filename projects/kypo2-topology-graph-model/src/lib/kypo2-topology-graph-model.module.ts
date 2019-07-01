@@ -7,4 +7,4 @@ import { CommonModule } from '@angular/common';
   ],
   declarations: []
 })
-export class GraphTopologyModelModule { }
+export class Kypo2TopologyGraphModelModule { }

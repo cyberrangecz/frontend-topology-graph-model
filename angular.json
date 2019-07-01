@@ -122,38 +122,38 @@
         }
       }
     },
-    "graph-topology-model-lib": {
-      "root": "projects/graph-topology-model-lib",
-      "sourceRoot": "projects/graph-topology-model-lib/src",
+    "kypo2-topology-graph-model": {
+      "root": "projects/kypo2-topology-graph-model",
+      "sourceRoot": "projects/kypo2-topology-graph-model/src",
       "projectType": "library",
-      "prefix": "lib",
+      "prefix": "kypo2",
       "architect": {
         "build": {
           "builder": "@angular-devkit/build-ng-packagr:build",
           "options": {
-            "tsConfig": "projects/graph-topology-model-lib/tsconfig.lib.json",
-            "project": "projects/graph-topology-model-lib/ng-package.json"
+            "tsConfig": "projects/kypo2-topology-graph-model/tsconfig.lib.json",
+            "project": "projects/kypo2-topology-graph-model/ng-package.json"
           },
           "configurations": {
             "production": {
-              "project": "projects/graph-topology-model-lib/ng-package.prod.json"
+              "project": "projects/kypo2-topology-graph-model/ng-package.prod.json"
             }
           }
         },
         "test": {
           "builder": "@angular-devkit/build-angular:karma",
           "options": {
-            "main": "projects/graph--model-lib/src/test.ts",
-            "tsConfig": "projects/graph-topology-model-lib/tsconfig.spec.json",
-            "karmaConfig": "projects/graph-topology-model-lib/karma.conf.js"
+            "main": "projects/kypo2-topology-graph-model/src/test.ts",
+            "tsConfig": "projects/kypo2-topology-graph-model/tsconfig.spec.json",
+            "karmaConfig": "projects/kypo2-topology-graph-model/karma.conf.js"
           }
         },
         "lint": {
           "builder": "@angular-devkit/build-angular:tslint",
           "options": {
             "tsConfig": [
-              "projects/graph-topology-model-lib/tsconfig.lib.json",
-              "projects/graph-topology-model-lib/tsconfig.spec.json"
+              "projects/kypo2-topology-graph-model/tsconfig.lib.json",
+              "projects/kypo2-topology-graph-model/tsconfig.spec.json"
             ],
             "exclude": [
               "**/node_modules/**"

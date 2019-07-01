@@ -1,5 +1,5 @@
 {
-  "name": "topology-model",
+  "name": "kypo2-topology-graph-model",
   "version": "1.0.0",
   "author": "Martin Hamerník <445720@mail.muni.cz>",
   "description": "Common model of graph topology in its latest form (from Python API)",
@@ -15,10 +15,10 @@
     "test": "ng test",
     "lint": "ng lint",
     "e2e": "ng e2e",
-    "build-library": "ng build --prod graph-topology-model-lib",
-    "pack": "cd dist/graph-topology-model-lib && npm pack",
+    "build-library": "ng build --prod kypo2-topology-graph-model",
+    "pack": "cd dist/kypo2-topology-graph-model && npm pack",
     "generate-package": "npm install && npm run build-library && npm run pack",
-    "publish": "npm run generate-package && cd dist/graph-topology-model-lib &&  npm publish --registry=http://kypo-storage.ics.muni.cz:8081/repository/npm-hosted"
+    "publish": "npm run generate-package && cd dist/kypo2-topology-graph-model &&  npm publish --registry=http://kypo-storage.ics.muni.cz:8081/repository/npm-hosted"
   },
   "private": false,
   "dependencies": {

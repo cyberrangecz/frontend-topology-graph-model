@@ -20,11 +20,11 @@
       "dom"
     ],
     "paths": {
-      "topology-model-lib": [
-        "dist/topology-model-lib"
+      "kypo2-topology-graph-model": [
+        "dist/kypo2-topology-graph-model"
       ],
-      "topology-model-lib/*": [
-        "dist/topology-model-lib/*"
+      "kypo2-topology-graph-model/*": [
+        "dist/kypo2-topology-graph-model/*"
       ]
     }
   }

@@ -1,8 +1,8 @@
 /*
- * Public API Surface of graph-graph-topology-model-lib
+ * Public API Surface of graph-kypo2-topology-graph-model
  */
 
-export * from './lib/graph-topology-model.module';
+export * from './lib/kypo2-topology-graph-model.module';
 
 export * from './lib/link/link';
 
