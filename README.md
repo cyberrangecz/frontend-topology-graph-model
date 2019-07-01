@@ -1,6 +1,8 @@
-#Topology Graph Model
+# Topology Graph Model
 
-Topology Model is a library containing model of topology graph..
+**Current version: 1.0.0**
+
+Topology Model is a library containing model of topology graph.
 
 Library contains model for 
 
