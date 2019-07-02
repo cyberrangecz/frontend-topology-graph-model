@@ -15,9 +15,9 @@ It extends Node and Link D3.js model and therefore it can be used in apps using 
 
 ## Prerequisites
 To use the library you need to have installed:
-npm
-Angular Material v8 or higher
-D3.js v5 or higher
+* NPM with private [KYPO Nexus repository](https://projects.ics.muni.cz/projects/kbase/knowledgebase/articles/153)
+* Angular Material v8 or higher
+* D3.js v5 or higher
 
 ## Usage
 To use the model in your project follow these steps:
