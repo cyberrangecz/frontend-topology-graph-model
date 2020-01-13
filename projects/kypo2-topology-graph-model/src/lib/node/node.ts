@@ -13,7 +13,15 @@ export abstract class Node implements INode {
   fy?: number | null;
 
   physicalRole: NodePhysicalRoleEnum;
+
+  /**
+   * Unique name of the node
+   */
   name: string;
+
+  /**
+   * All ports associated with the node
+   */
   nodePorts: NodePort[];
 
   protected constructor() {

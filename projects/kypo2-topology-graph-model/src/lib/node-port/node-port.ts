@@ -1,3 +1,6 @@
+/**
+ * Class representing a port of a node in network topology. Association between port and node is created by nodeName attribute
+ */
 export class NodePort {
   name: string;
   nodeName: string;
