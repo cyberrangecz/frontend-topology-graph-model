@@ -10,7 +10,14 @@ import {HostNode} from './host-node';
 
 export class SwitchNode extends Node {
 
+  /**
+   * Classless inter-domain routing
+   */
   cidr: string;
+
+  /**
+   * All nodes in the switch subnetwork
+   */
   children: INode[];
 
   constructor() {
@@ -31,6 +38,9 @@ export class SwitchNode extends Node {
     }
   }
 
+  /**
+   * True if subnetwork can be expanded, false otherwise
+   */
   public hasExpandableSubnetwork(): boolean {
     return this.children && this.children.length > 0 && this.children.some(child => child instanceof HostNode);
   }
