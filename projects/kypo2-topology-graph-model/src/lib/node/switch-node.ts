@@ -3,13 +3,12 @@
  * Can have two types - cloud if sub network is hidden or switch if sub network is revealed.
  */
 
-import { Node } from './node';
 import { NodePhysicalRoleEnum } from '../enums/node-physical-role-enum';
-import {INode} from './inode';
-import {HostNode} from './host-node';
+import { HostNode } from './host-node';
+import { INode } from './inode';
+import { Node } from './node';
 
 export class SwitchNode extends Node {
-
   /**
    * Classless inter-domain routing
    */
@@ -32,7 +31,6 @@ export class SwitchNode extends Node {
   public changeSwitchPhysicalRole() {
     if (this.physicalRole === NodePhysicalRoleEnum.Switch) {
       this.physicalRole = NodePhysicalRoleEnum.Cloud;
-
     } else if (this.physicalRole === NodePhysicalRoleEnum.Cloud) {
       this.physicalRole = NodePhysicalRoleEnum.Switch;
     }
@@ -42,6 +40,6 @@ export class SwitchNode extends Node {
    * True if subnetwork can be expanded, false otherwise
    */
   public hasExpandableSubnetwork(): boolean {
-    return this.children && this.children.length > 0 && this.children.some(child => child instanceof HostNode);
+    return this.children && this.children.length > 0 && this.children.some((child) => child instanceof HostNode);
   }
 }

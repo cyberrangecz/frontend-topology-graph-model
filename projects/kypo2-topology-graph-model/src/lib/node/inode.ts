@@ -1,10 +1,11 @@
-import {NodePhysicalRoleEnum} from '../enums/node-physical-role-enum';
-import {NodePort} from '../node-port/node-port';
-import {SimulationNodeDatum} from 'd3';
+import { SimulationNodeDatum } from 'd3';
+import { NodePhysicalRoleEnum } from '../enums/node-physical-role-enum';
+import { NodePort } from '../node-port/node-port';
 
 /**
  * Node interface extends D3 Node interface and implents coordinate attributes for the purposes of force graph simulation (visualization)
  */
+// tslint:disable-next-line:interface-name
 export interface INode extends SimulationNodeDatum {
   x?: number;
   y?: number;

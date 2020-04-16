@@ -20,6 +20,11 @@
     "generate-package": "npm install && npm run build-library && npm run pack",
     "publish": "npm run generate-package && cd dist/kypo2-topology-graph-model &&  npm publish --registry=http://kypo-storage.ics.muni.cz:8081/repository/npm-hosted"
   },
+  "husky": {
+    "hooks": {
+      "pre-commit": "ng lint"
+    }
+  },
   "private": false,
   "dependencies": {
     "@angular/common": "^9.0.0",
@@ -56,6 +61,10 @@
     "karma-coverage-istanbul-reporter": "~2.0.0",
     "karma-jasmine": "~1.1.1",
     "karma-jasmine-html-reporter": "^0.2.2",
+    "tslint-config-prettier": "1.18.0",
+    "tslint-plugin-prettier": "2.3.0",
+    "husky": "^4.2.5",
+    "prettier": "2.0.4",
     "protractor": "~5.3.0",
     "ts-node": "~5.0.1",
     "tslint": "~5.9.1"
