@@ -1,14 +1,13 @@
-import { Node } from '../node/node';
+import { SimulationLinkDatum } from 'd3';
 import { LinkTypeEnum } from '../enums/link-type-enum';
-import {NodePort} from '../node-port/node-port';
-import {SimulationLinkDatum} from 'd3';
+import { NodePort } from '../node-port/node-port';
+import { Node } from '../node/node';
 
 /**
  * Class representing link between two nodes (connected to two ports) in a network topology
  * Class extends D3 interface necessary to connect the class with Node class in the D3 force simulation
  */
 export class Link implements SimulationLinkDatum<Node> {
-
   /**
    * Id of link
    */
@@ -39,7 +38,5 @@ export class Link implements SimulationLinkDatum<Node> {
    */
   type: LinkTypeEnum;
 
-
-  constructor() {
-  }
+  constructor() {}
 }

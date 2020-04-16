@@ -3,5 +3,5 @@
  */
 export enum LinkTypeEnum {
   InterfaceOverlay = 'interfaceOverlay',
-  InternetworkingOverlay = 'internetworkingOverlay'
+  InternetworkingOverlay = 'internetworkingOverlay',
 }
