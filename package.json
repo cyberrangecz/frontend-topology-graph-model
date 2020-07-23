@@ -8,9 +8,13 @@
     "test": "ng test",
     "lint": "ng lint",
     "e2e": "ng e2e",
+    "ci-test": "ng test --browsers ChromeHeadless --watch=false",
     "build-library": "ng build --prod kypo2-topology-graph-model",
-    "pack": "cd dist/kypo2-topology-graph-model && npm pack",
-    "build-and-pack": "npm install && npm run build-library && npm run pack"
+    "create-package": "cd dist/kypo2-topology-graph-model && npm pack",
+    "build-and-pack": "npm install && npm run build-library && npm run create-package",
+    "ci-update-version": "cd ./projects/kypo2-topology-graph-model/ && npm version $VERSION",
+    "ci-build-and-pack": "npm ci --cache .npm --prefer-offline && npm run build-library && npm run create-package",
+    "ci-publish-package": "cd dist/kypo2-topology-graph-model && npm publish"
   },
   "husky": {
     "hooks": {
