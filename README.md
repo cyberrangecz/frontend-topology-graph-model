@@ -19,7 +19,3 @@ To use the library you need to have installed:
 To use the model in your project follow these steps:
 1. Run `npm install kypo2-topology-graph-model`
 2. Import model classes like usual, for example `import { Node } from 'kypo2-topology-graph-model`
-
-## Developers
-
-* Martin Hamernik (445720@mail.muni.cz)
