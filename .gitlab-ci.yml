@@ -68,8 +68,10 @@ editVersionAndDeploy:
     - git config --global user.email "$GIT_SERVICE_USER_EMAIL"
     - git config --global user.name "$GIT_SERVICE_USER_NAME"
     - git remote set-url origin "$REPOSITORY_SSH_URL"
+    - git fetch
+    - git checkout master]
+    - git stash
     - git pull
-    - git checkout master
 
   script:
     - npm run ci-update-version
