@@ -70,7 +70,6 @@ editVersionAndDeploy:
     - git remote set-url origin "$REPOSITORY_SSH_URL"
     - git fetch
     - git checkout master
-    - git stash
     - git pull
 
   script:
