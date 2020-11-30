@@ -13,9 +13,9 @@ It extends Node and Link D3.js model and therefore it can be used in apps using 
 
 ## Prerequisites
 To use the library you need to have installed:
-* NPM with private [KYPO Nexus repository](https://projects.ics.muni.cz/projects/kbase/knowledgebase/articles/153)
+* NPM with access to [KYPO registry](https://projects.ics.muni.cz/projects/kbase/knowledgebase/articles/153)
 
 ## Usage
 To use the model in your project follow these steps:
-1. Run `npm install kypo2-topology-graph-model`
-2. Import model classes like usual, for example `import { Node } from 'kypo2-topology-graph-model`
+1. Run `npm install @kypo/topology-model`
+2. Import model classes like usual, for example `import { Node } from '@kypo/topology-model`
