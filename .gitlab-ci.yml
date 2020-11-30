@@ -69,7 +69,7 @@ editVersionAndDeploy:
     - git config --global user.name "$GIT_SERVICE_USER_NAME"
     - git remote set-url origin "$REPOSITORY_SSH_URL"
     - git fetch
-    - git checkout master]
+    - git checkout master
     - git stash
     - git pull
 
