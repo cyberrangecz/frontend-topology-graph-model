@@ -1,5 +1,5 @@
 {
-  "name": "@kypo/topology-model",
+  "name": "@muni-kypo-crp/topology-model",
   "version": "10.1.0",
   "peerDependencies": {
     "@angular/common": "^10.0.0",
