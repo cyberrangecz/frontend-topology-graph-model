@@ -5,7 +5,7 @@ import { NodePort } from '../node-port/node-port';
 /**
  * Node interface extends D3 Node interface and implents coordinate attributes for the purposes of force graph simulation (visualization)
  */
-// tslint:disable-next-line:interface-name
+// eslint-disable-next-line @typescript-eslint/naming-convention
 export interface INode extends SimulationNodeDatum {
   x?: number;
   y?: number;

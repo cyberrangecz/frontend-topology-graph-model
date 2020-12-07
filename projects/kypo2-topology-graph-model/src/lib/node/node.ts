@@ -24,8 +24,6 @@ export abstract class Node implements INode {
    */
   nodePorts: NodePort[];
 
-  protected constructor() {}
-
   public toString = (): string => {
     let result = 'Name: ' + this.name + '\n';
     result += 'Physical role: ' + this.physicalRole + '\n';

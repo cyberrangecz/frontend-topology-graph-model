@@ -7,9 +7,7 @@ export class NodePort {
   ip?: string;
   mac?: string;
 
-  constructor() {}
-
-  toString() {
+  toString(): string {
     let result = 'Name: ' + this.name + '\n';
     if (this.ip !== null && this.ip !== '') {
       result += 'IP address: ' + this.ip + '\n';

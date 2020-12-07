@@ -28,7 +28,7 @@ export class SwitchNode extends Node {
    * Router is role for revealed subnet
    * Cloud is role for hidden subnet
    */
-  public changeSwitchPhysicalRole() {
+  public changeSwitchPhysicalRole(): void {
     if (this.physicalRole === NodePhysicalRoleEnum.Switch) {
       this.physicalRole = NodePhysicalRoleEnum.Cloud;
     } else if (this.physicalRole === NodePhysicalRoleEnum.Cloud) {
