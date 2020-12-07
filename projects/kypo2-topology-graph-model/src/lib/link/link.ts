@@ -37,6 +37,4 @@ export class Link implements SimulationLinkDatum<Node> {
    * Type of link
    */
   type: LinkTypeEnum;
-
-  constructor() {}
 }
