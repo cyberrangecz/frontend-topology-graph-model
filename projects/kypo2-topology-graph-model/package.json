@@ -2,8 +2,8 @@
   "name": "@muni-kypo-crp/topology-model",
   "version": "11.0.0",
   "peerDependencies": {
-    "@angular/common": "^10.0.0",
-    "@angular/core": "^10.0.0",
+    "@angular/common": "~11.0.8",
+    "@angular/core": "~11.0.8",
     "typescript-collections": "~1.3.3"
   },
   "dependencies": {
