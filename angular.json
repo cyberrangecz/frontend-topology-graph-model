@@ -45,7 +45,6 @@
               "optimization": true,
               "outputHashing": "all",
               "sourceMap": false,
-              "extractCss": true,
               "namedChunks": false,
               "aot": true,
               "extractLicenses": true,
@@ -115,7 +114,7 @@
       "prefix": "kypo2",
       "architect": {
         "build": {
-          "builder": "@angular-devkit/build-ng-packagr:build",
+          "builder": "@angular-devkit/build-angular:ng-packagr",
           "options": {
             "tsConfig": "projects/kypo2-topology-graph-model/tsconfig.lib.json",
             "project": "projects/kypo2-topology-graph-model/ng-package.json"
