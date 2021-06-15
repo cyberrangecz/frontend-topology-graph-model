@@ -13,7 +13,7 @@
     "build-library": "ng build --configuration production kypo2-topology-graph-model",
     "create-package": "cd dist/kypo2-topology-graph-model && npm pack",
     "build-and-pack": "npm install && npm run build-library && npm run create-package",
-    "ci-update-version": "cd ./projects/kypo2-topology-graph-model/ && npm version $VERSION",
+    "ci-update-version": "cd ./projects/kypo2-topology-graph-model/ && npm version $TAG_VERSION",
     "ci-build-and-pack": "npm ci --cache .npm --prefer-offline && npm run build-library && npm run create-package",
     "ci-publish-package": "cd dist/kypo2-topology-graph-model && npm publish"
   },
