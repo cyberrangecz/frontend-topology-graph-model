@@ -6,6 +6,8 @@ import { Node } from './node';
 
 export class HostNode extends Node implements Connectable {
   consoleUrl: string;
+  osType: string;
+  guiAccess: boolean;
 
   constructor() {
     super();
