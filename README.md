@@ -4,7 +4,7 @@ Topology Model is a library containing model of topology graph.
 
 Library contains model for 
 
-* Node (SwitchNode, HostNode, RouterNode)
+* Node (SwitchNode, HostNode, RouterNode, SpecialNode)
 * Node Port
 * Link
 * Enums

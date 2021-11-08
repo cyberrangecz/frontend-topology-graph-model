@@ -11,6 +11,7 @@ export * from './lib/node/node';
 export * from './lib/node/switch-node';
 export * from './lib/node/router-node';
 export * from './lib/node/host-node';
+export * from './lib/node/special-node';
 
 export * from './lib/node-port/node-port';
 
