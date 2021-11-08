@@ -14,6 +14,8 @@ export class RouterNode extends Node implements Connectable {
    * Classless inter-domain routing
    */
   cidr: string;
+  osType: string;
+  guiAccess: boolean;
 
   constructor() {
     super();
