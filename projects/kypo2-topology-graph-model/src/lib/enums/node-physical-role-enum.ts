@@ -8,4 +8,5 @@ export enum NodePhysicalRoleEnum {
   Cloud = 'cloud',
   Desktop = 'desktop',
   Mobile = 'mobile',
+  Internet = 'internet',
 }
