@@ -1,2 +1,2 @@
-12.0.3 Add new node of "special" type (for non-host nodes)
+12.0.3 Add new node of "special" type (for internet nodes)
 12.0.2 Update gitlab CI
