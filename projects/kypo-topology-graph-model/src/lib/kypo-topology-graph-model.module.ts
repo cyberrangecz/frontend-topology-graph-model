@@ -8,4 +8,4 @@ import { NgModule } from '@angular/core';
   imports: [CommonModule],
   declarations: [],
 })
-export class kypoTopologyGraphModelModule {}
+export class KypoTopologyGraphModelModule {}
