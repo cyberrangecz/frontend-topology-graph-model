@@ -1,3 +1,4 @@
+14.0.1 Rename from kypo2 to kypo.
 14.0.0 Update to Angular 14.
 13.0.0 Update to Angular 13, CI/CD update
 12.0.3 Add new node of "special" type (for internet nodes)

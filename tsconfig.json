@@ -20,11 +20,11 @@
       "dom"
     ],
     "paths": {
-      "kypo2-topology-graph-model": [
-        "dist/kypo2-topology-graph-model"
+      "kypo-topology-graph-model": [
+        "dist/kypo-topology-graph-model"
       ],
-      "kypo2-topology-graph-model/*": [
-        "dist/kypo2-topology-graph-model/*"
+      "kypo-topology-graph-model/*": [
+        "dist/kypo-topology-graph-model/*"
       ]
     }
   }

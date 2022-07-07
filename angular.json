@@ -112,39 +112,39 @@
         }
       }
     },
-    "kypo2-topology-graph-model": {
-      "root": "projects/kypo2-topology-graph-model",
-      "sourceRoot": "projects/kypo2-topology-graph-model/src",
+    "kypo-topology-graph-model": {
+      "root": "projects/kypo-topology-graph-model",
+      "sourceRoot": "projects/kypo-topology-graph-model/src",
       "projectType": "library",
-      "prefix": "kypo2",
+      "prefix": "kypo",
       "architect": {
         "build": {
           "builder": "@angular-devkit/build-angular:ng-packagr",
           "options": {
-            "tsConfig": "projects/kypo2-topology-graph-model/tsconfig.lib.json",
-            "project": "projects/kypo2-topology-graph-model/ng-package.json"
+            "tsConfig": "projects/kypo-topology-graph-model/tsconfig.lib.json",
+            "project": "projects/kypo-topology-graph-model/ng-package.json"
           },
           "configurations": {
             "production": {
-              "project": "projects/kypo2-topology-graph-model/ng-package.prod.json",
-              "tsConfig": "projects/kypo2-topology-graph-model/tsconfig.lib.prod.json"
+              "project": "projects/kypo-topology-graph-model/ng-package.prod.json",
+              "tsConfig": "projects/kypo-topology-graph-model/tsconfig.lib.prod.json"
             }
           }
         },
         "test": {
           "builder": "@angular-devkit/build-angular:karma",
           "options": {
-            "main": "projects/kypo2-topology-graph-model/src/test.ts",
-            "tsConfig": "projects/kypo2-topology-graph-model/tsconfig.spec.json",
-            "karmaConfig": "projects/kypo2-topology-graph-model/karma.conf.js"
+            "main": "projects/kypo-topology-graph-model/src/test.ts",
+            "tsConfig": "projects/kypo-topology-graph-model/tsconfig.spec.json",
+            "karmaConfig": "projects/kypo-topology-graph-model/karma.conf.js"
           }
         },
         "lint": {
           "builder": "@angular-eslint/builder:lint",
           "options": {
             "lintFilePatterns": [
-              "projects/kypo2-topology-graph-model/**/*.ts",
-              "projects/kypo2-topology-graph-model/**/*.component.html"
+              "projects/kypo-topology-graph-model/**/*.ts",
+              "projects/kypo-topology-graph-model/**/*.component.html"
             ]
           }
         }
