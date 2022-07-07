@@ -1,6 +1,6 @@
 {
   "name": "@muni-kypo-crp/topology-model",
-  "version": "14.0.1",
+  "version": "14.0.2",
   "peerDependencies": {
     "@angular/common": "^12.0.3",
     "@angular/core": "^12.0.3",
