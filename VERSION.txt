@@ -1,4 +1,4 @@
-14.0.3 Add new node of "host-container" type (for docker container nodes)
+14.0.3 Add container field to host node.
 14.0.2 Fix module name.
 14.0.1 Rename from kypo2 to kypo.
 14.0.0 Update to Angular 14.
