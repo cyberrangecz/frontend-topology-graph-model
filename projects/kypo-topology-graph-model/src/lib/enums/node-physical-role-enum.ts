@@ -9,5 +9,4 @@ export enum NodePhysicalRoleEnum {
   Desktop = 'desktop',
   Mobile = 'mobile',
   Internet = 'internet',
-  Docker = 'docker',
 }
