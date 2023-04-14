@@ -22,8 +22,8 @@ export class HostNode extends Node implements Connectable {
       result += ports;
       counter++;
     });
-    if (this.containers.length < 1) {
-      result += '\nContainers:';
+    if (this.containers.length > 1) {
+      result += '\nAvailable containers:';
       for (let i = 0; i < this.containers.length; i++) {
         result += '\n' + this.containers[i];
       }
