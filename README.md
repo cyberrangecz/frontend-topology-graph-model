@@ -9,7 +9,7 @@ Library contains model for
 * Link
 * Enums
 
-It extends Node and Link D3.js model and therefore it can be used in apps using D3.js library.
+It extends Node and Link D3.js model, and therefore it can be used in apps using D3.js library.
 
 ## Prerequisites
 To use the library you need to have installed:
