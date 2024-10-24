@@ -61,18 +61,18 @@
         "serve": {
           "builder": "@angular-devkit/build-angular:dev-server",
           "options": {
-            "browserTarget": "graph-topology-model:build"
+            "buildTarget": "graph-topology-model:build"
           },
           "configurations": {
             "production": {
-              "browserTarget": "graph-topology-model:build:production"
+              "buildTarget": "graph-topology-model:build:production"
             }
           }
         },
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n",
           "options": {
-            "browserTarget": "graph-topology-model:build"
+            "buildTarget": "graph-topology-model:build"
           }
         },
         "test": {
