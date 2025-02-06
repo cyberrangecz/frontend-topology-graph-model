@@ -13,6 +13,7 @@ export class HostNode extends Node implements Connectable {
   constructor() {
     super();
   }
+
   public toString = (): string => {
     let result = 'Name: ' + this.name + '\n';
     result += 'Physical role: ' + this.physicalRole + '\n';
