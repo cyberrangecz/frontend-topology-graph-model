@@ -20,11 +20,11 @@
             "dom"
         ],
         "paths": {
-            "kypo-topology-graph-model": [
-                "dist/kypo-topology-graph-model"
+            "topology-graph-model": [
+                "dist/topology-graph-model"
             ],
-            "kypo-topology-graph-model/*": [
-                "dist/kypo-topology-graph-model/*"
+            "topology-graph-model/*": [
+                "dist/topology-graph-model/*"
             ]
         },
         "useDefineForClassFields": false

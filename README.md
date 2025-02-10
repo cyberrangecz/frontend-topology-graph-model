@@ -11,12 +11,6 @@ Library contains model for
 
 It extends Node and Link D3.js model, and therefore it can be used in apps using D3.js library.
 
-## Prerequisites
-
-To use the library you need to have installed:
-
-* NPM with access to [KYPO registry](https://projects.ics.muni.cz/projects/kbase/knowledgebase/articles/153)
-
 ## Usage
 
 To use the model in your project follow these steps:

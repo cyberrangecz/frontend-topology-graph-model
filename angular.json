@@ -112,39 +112,39 @@
                 }
             }
         },
-        "kypo-topology-graph-model": {
-            "root": "projects/kypo-topology-graph-model",
-            "sourceRoot": "projects/kypo-topology-graph-model/src",
+        "topology-graph-model": {
+            "root": "projects/topology-graph-model",
+            "sourceRoot": "projects/topology-graph-model/src",
             "projectType": "library",
-            "prefix": "kypo",
+            "prefix": "crczp",
             "architect": {
                 "build": {
                     "builder": "@angular-devkit/build-angular:ng-packagr",
                     "options": {
-                        "tsConfig": "projects/kypo-topology-graph-model/tsconfig.lib.json",
-                        "project": "projects/kypo-topology-graph-model/ng-package.json"
+                        "tsConfig": "projects/topology-graph-model/tsconfig.lib.json",
+                        "project": "projects/topology-graph-model/ng-package.json"
                     },
                     "configurations": {
                         "production": {
-                            "project": "projects/kypo-topology-graph-model/ng-package.prod.json",
-                            "tsConfig": "projects/kypo-topology-graph-model/tsconfig.lib.prod.json"
+                            "project": "projects/topology-graph-model/ng-package.prod.json",
+                            "tsConfig": "projects/topology-graph-model/tsconfig.lib.prod.json"
                         }
                     }
                 },
                 "test": {
                     "builder": "@angular-devkit/build-angular:karma",
                     "options": {
-                        "main": "projects/kypo-topology-graph-model/src/test.ts",
-                        "tsConfig": "projects/kypo-topology-graph-model/tsconfig.spec.json",
-                        "karmaConfig": "projects/kypo-topology-graph-model/karma.conf.js"
+                        "main": "projects/topology-graph-model/src/test.ts",
+                        "tsConfig": "projects/topology-graph-model/tsconfig.spec.json",
+                        "karmaConfig": "projects/topology-graph-model/karma.conf.js"
                     }
                 },
                 "lint": {
                     "builder": "@angular-eslint/builder:lint",
                     "options": {
                         "lintFilePatterns": [
-                            "projects/kypo-topology-graph-model/**/*.ts",
-                            "projects/kypo-topology-graph-model/**/*.component.html"
+                            "projects/topology-graph-model/**/*.ts",
+                            "projects/topology-graph-model/**/*.component.html"
                         ]
                     }
                 }
