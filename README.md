@@ -15,5 +15,5 @@ It extends Node and Link D3.js model, and therefore it can be used in apps using
 
 To use the model in your project follow these steps:
 
-1. Run `npm install @cyberrangecz-platform/topology-model`
-2. Import model classes like usual, for example `import { Node } from '@cyberrangecz-platform/topology-model`
+1. Run `npm install @crczp/topology-model`
+2. Import model classes like usual, for example `import { Node } from '@crczp/topology-model`

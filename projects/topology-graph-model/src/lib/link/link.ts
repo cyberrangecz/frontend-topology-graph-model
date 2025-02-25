@@ -8,33 +8,33 @@ import { Node } from '../node/node';
  * Class extends D3 interface necessary to connect the class with Node class in the D3 force simulation
  */
 export class Link implements SimulationLinkDatum<Node> {
-  /**
-   * Id of link
-   */
-  id: number;
+    /**
+     * Id of link
+     */
+    id: number;
 
-  /**
-   * Source node from where the link starts
-   */
-  source: Node;
+    /**
+     * Source node from where the link starts
+     */
+    source: Node;
 
-  /**
-   * Target node where the link ends
-   */
-  target: Node;
+    /**
+     * Target node where the link ends
+     */
+    target: Node;
 
-  /**
-   * Port into which the link is connected on source node
-   */
-  portA: NodePort;
+    /**
+     * Port into which the link is connected on source node
+     */
+    portA: NodePort;
 
-  /**
-   * Port into which the link is connected on target node
-   */
-  portB: NodePort;
+    /**
+     * Port into which the link is connected on target node
+     */
+    portB: NodePort;
 
-  /**
-   * Type of link
-   */
-  type: LinkTypeEnum;
+    /**
+     * Type of link
+     */
+    type: LinkTypeEnum;
 }

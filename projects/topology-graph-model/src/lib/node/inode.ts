@@ -7,22 +7,22 @@ import { NodePort } from '../node-port/node-port';
  */
 // eslint-disable-next-line @typescript-eslint/naming-convention
 export interface INode extends SimulationNodeDatum {
-  x?: number;
-  y?: number;
-  vx?: number;
-  vy?: number;
-  fx?: number | null;
-  fy?: number | null;
+    x?: number;
+    y?: number;
+    vx?: number;
+    vy?: number;
+    fx?: number | null;
+    fy?: number | null;
 
-  physicalRole: NodePhysicalRoleEnum;
+    physicalRole: NodePhysicalRoleEnum;
 
-  /**
-   * Unique name of the node
-   */
-  name: string;
+    /**
+     * Unique name of the node
+     */
+    name: string;
 
-  /**
-   * All ports associated with the node
-   */
-  nodePorts: NodePort[];
+    /**
+     * All ports associated with the node
+     */
+    nodePorts: NodePort[];
 }

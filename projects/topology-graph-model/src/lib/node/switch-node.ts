@@ -9,37 +9,37 @@ import { INode } from './inode';
 import { Node } from './node';
 
 export class SwitchNode extends Node {
-  /**
-   * Classless inter-domain routing
-   */
-  cidr: string;
+    /**
+     * Classless inter-domain routing
+     */
+    cidr: string;
 
-  /**
-   * All nodes in the switch subnetwork
-   */
-  children: INode[];
+    /**
+     * All nodes in the switch subnetwork
+     */
+    children: INode[];
 
-  constructor() {
-    super();
-  }
-
-  /**
-   * Changes switch physical role (Router -> Cloud or Cloud -> Router)
-   * Router is role for revealed subnet
-   * Cloud is role for hidden subnet
-   */
-  public changeSwitchPhysicalRole(): void {
-    if (this.physicalRole === NodePhysicalRoleEnum.Switch) {
-      this.physicalRole = NodePhysicalRoleEnum.Cloud;
-    } else if (this.physicalRole === NodePhysicalRoleEnum.Cloud) {
-      this.physicalRole = NodePhysicalRoleEnum.Switch;
+    constructor() {
+        super();
     }
-  }
 
-  /**
-   * True if subnetwork can be expanded, false otherwise
-   */
-  public hasExpandableSubnetwork(): boolean {
-    return this.children && this.children.length > 0 && this.children.some((child) => child instanceof HostNode);
-  }
+    /**
+     * Changes switch physical role (Router -> Cloud or Cloud -> Router)
+     * Router is role for revealed subnet
+     * Cloud is role for hidden subnet
+     */
+    public changeSwitchPhysicalRole(): void {
+        if (this.physicalRole === NodePhysicalRoleEnum.Switch) {
+            this.physicalRole = NodePhysicalRoleEnum.Cloud;
+        } else if (this.physicalRole === NodePhysicalRoleEnum.Cloud) {
+            this.physicalRole = NodePhysicalRoleEnum.Switch;
+        }
+    }
+
+    /**
+     * True if subnetwork can be expanded, false otherwise
+     */
+    public hasExpandableSubnetwork(): boolean {
+        return this.children && this.children.length > 0 && this.children.some((child) => child instanceof HostNode);
+    }
 }
